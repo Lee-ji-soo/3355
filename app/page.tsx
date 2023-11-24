@@ -1,6 +1,6 @@
 'use client';
-import KakaoLoginProvider from '../src/auth/kakao/KakaoLogin.provider';
-import { KakaoLoginComponents } from '../src/auth/kakao/KakaoLogin.components';
+import KakaoLoginProvider from '../front/components/auth/kakao/KakaoLogin.provider';
+import { KakaoLoginComponents } from '../front/components/auth/kakao/KakaoLogin.components';
 
 declare global {
   interface Window {
@@ -12,7 +12,7 @@ function Home() {
   return (
     <KakaoLoginProvider>
       <KakaoLoginComponents.SigninButton />
-      <h1>{'삼삼오오'}</h1>;
+      <h1>{'삼삼오오'}</h1>
     </KakaoLoginProvider>
   );
 }
